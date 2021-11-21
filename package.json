@@ -1,6 +1,6 @@
 {
   "name": "node-express",
-  "version": "version:(0.0.1)",
+  "version": "0.0.1",
   "description": "Rest API Curso",
   "main": "index.js",
   "author": "Jorge Agullo",
