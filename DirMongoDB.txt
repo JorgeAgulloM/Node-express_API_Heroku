@@ -1,0 +1,1 @@
+mongodb+srv://admin:admin123456@cluster0.ont4z.mongodb.net/Cluster()
