@@ -10,7 +10,7 @@ mongoose.connect(urlMongoAtlas, (err, res) => {
     if (err) {
       throw err;
     } else {
-      console.log("Laconexión a la base de datos es correcta.");
+      console.log("La conexión a la base de datos es correcta.");
 
       app.listen(port, () => {
         console.log(`Example app listening at http://localhost:${port}`);
