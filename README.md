@@ -16,13 +16,16 @@ info Params:
 
 Example of return (JSON):
 <pre><code>
-  [{
-    "_id": "619a9eee31be1d7bb2f0a1d0",
-    "complted": false,
-    "created_at": "2021-11-21T19:33:02.823Z",
-    "description": "Lo necesario para BackEnd",
-    "__v": 0
-  }]
+  {
+    "task": {
+        "completed": false,
+        "_id": "619b7aa45ef13fc103811301",
+        "created_at": "2021-11-22T11:10:28.008Z",
+        "title": "Nueva Tarea",
+        "description": "Probando nueva tarea",
+        "__v": 0
+    }
+}
 </code></pre>
 
 
