@@ -5,7 +5,7 @@ async function createTask(req, res) {
   const task = new Task();
   const params = req.body;
 
-  task.tittle = params.tittle;
+  task.title = params.title;
   task.description = params.description;
 
   try {

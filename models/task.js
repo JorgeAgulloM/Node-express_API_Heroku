@@ -2,7 +2,7 @@ const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 const TaskSchema = Schema({
-    tittle: {
+    title: {
         type: String,
         require: true
     },
@@ -10,7 +10,7 @@ const TaskSchema = Schema({
         type: String,
         require: true
     },
-    complted: {
+    completed: {
         type: Boolean, 
         require: true,
         default: false
