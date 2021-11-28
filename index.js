@@ -2,14 +2,13 @@ const mongoose = require("mongoose");
 const app = require("./app");
 const port = process.env.PORT || 3977;
 const urlMongoDb =
-  "mongodb+srv://admin:admin123456@taskdb.p0hyu.mongodb.net/mydb";
+  "mongodb+srv://admin:admin123456@cluster0.ont4z.mongodb.net/Cluster()";
 
 mongoose.connect(
   urlMongoDb,
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
+    useUnifiedTopology: true
   },
   (err, res) => {
     try {

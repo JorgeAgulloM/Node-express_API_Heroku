@@ -9,7 +9,7 @@ const api = express.Router();
 
 api.post("/register", UserController.register);
 api.post("/login", UserController.login);
-api.get("/prtected", [md_auth.ensureAuth], UserController.protected);
+api.get("/protected", [md_auth.ensureAuth], UserController.protected);
 api.put("/upload-avatar/:id", [md_auth.ensureAuth, md_upload_avatar], UserController.uploadAvatar);
 api.get("/avatar/:avatarName", UserController.getAvatar);
 

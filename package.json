@@ -1,10 +1,10 @@
 {
   "name": "node-express",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Rest API Curso",
   "main": "index.js",
-  "author": "Agustín Navarro Galdon",
-  "license": "MIT",
+  "author": "JORGE AGULLO MARTIN",
+  "license": "JAM",
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
@@ -15,7 +15,8 @@
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "mongoose": "^5.13.3"
+    "mongodb": "^4.2.0",
+    "mongoose": "^6.0.13"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
