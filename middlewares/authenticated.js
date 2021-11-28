@@ -22,7 +22,7 @@ function ensureAuth(req, res, next) {
         return res.status(400).send({ msg: "Token invalido"} );
     }
 
-    rew.user = payload;
+    req.user = payload;
     next();
 }
 

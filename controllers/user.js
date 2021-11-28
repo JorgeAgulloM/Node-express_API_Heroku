@@ -13,7 +13,7 @@ async function register(req, res) {
         if (!user.email) { msg: "El email es obligatorio" };
         if (!user.password) { msg: "La contraseña es obligatoria" };
 
-        const foundEmail = await User.findOne({ email });
+        const foundEmail = await User.findOne({ email: user.email });
         if (foundEmail) throw { msg: "El email ya ha sido regitrado"};
 
         const salt = bcrypts.genSaltSync(10);
@@ -27,7 +27,7 @@ async function register(req, res) {
 }
 
 async function login(req, res) {
-    const { email, password } = req.boy;
+    const { email, password } = req.body;
 
 
     try {
@@ -45,7 +45,7 @@ async function login(req, res) {
 }
 
 function protected(req, res) {
-    res.status(200).send({ msg: "Contendio del enpoint protegido"})
+    res.status(200).send({ msg: "Contendio del endPoint protegido"})
 }
 
 function uploadAvatar(req, res) {
